@@ -7,19 +7,24 @@ toolBtn.style.width = "100px";
 toolBtn.style.left='1%';
 toolBtn.style.top='3%';
 document.body.appendChild(toolBtn);
+var inelBtn;
+var autoclBtn;
+var xrayBtn;
+var wrtxtBtn;
+var txtedBtn;
 toolBtn.onmouseover = function()
           {this.style.backgroundColor = 'Lavender';};
 toolBtn.onmouseout = function()
           {this.style.backgroundColor = 'Azure';};
 var showClick = false;
 toolBtn.onclick = function () {
-if (showClick = false){
+if (showClick==false){
 showClick = true;
-var inelBtn = document.createElement("button");
-var autoclBtn= document.createElement("button");
-var xrayBtn = document.createElement("button");
-var wrtxtBtn = document.createElement("button");
-var txtedBtn = document.createElement("button");
+inelBtn = document.createElement("button");
+autoclBtn= document.createElement("button");
+xrayBtn= document.createElement("button");
+wrtxtBtn = document.createElement("button");
+txtedBtn = document.createElement("button");
 [inelBtn.innerHTML,autoclBtn.innerHTML,xrayBtn.innerHTML,wrtxtBtn.innerHTML,txtedBtn.innerHTML] = ["Inspect Element","Autoclicker","Webpage X-Ray","Text Writer","Text Editor",];
 [inelBtn.style.top,autoclBtn.style.top,xrayBtn.style.top,wrtxtBtn.style.top,txtedBtn.style.top] = ['10%','16%','22%','28%','34%'];
 inelBtn.style.position=autoclBtn.style.position=xrayBtn.style.position=wrtxtBtn.style.position=txtedBtn.style.position = 'fixed';
@@ -33,7 +38,7 @@ inelBtn.onmouseover=autoclBtn.onmouseover=xrayBtn.onmouseover=wrtxtBtn.onmouseov
 {this.style.backgroundColor = 'LightCyan';};
 inelBtn.onmouseout=autoclBtn.onmouseout=xrayBtn.onmouseout=wrtxtBtn.onmouseout=txtedBtn.onmouseout = function()
 {this.style.backgroundColor = 'Azure';};
-}
-} else{  
-showClick = false;
-inelBtn.style.visiblility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';};
+} 
+else{
+inelBtn.style.visiblility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
+showClick = false;}}
