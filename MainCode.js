@@ -13,30 +13,25 @@ toolBtn.onmouseout = function()
           {this.style.backgroundColor = 'Azure';};
 toolBtn.onclick = function () {
 
-for (let i = 0; i < 3; i++) {
-var Btn = document.createElement("button");
-if (i == 0){
-          Btn.innerHTML = "Food";
-          Btn.style.top='10%';}
-if (i == 0){
-          Btn.innerHTML = "Food";
-          Btn.style.top='15%';}
-if (i == 0){
-          Btn.innerHTML = "Food";
-          Btn.style.top='20%';}
-if (i == 0){
-          Btn.innerHTML = "Food";
-          Btn.style.top='25%';}
-Btn.style.position='fixed';
-Btn.style.backgroundColor='Azure';
-Btn.style.height = "37px";
-Btn.style.width = "75px";
-Btn.style.left='1%';
-document.body.appendChild(Btn);
+var inelBtn = document.createElement("button");
+var autoclBtn= document.createElement("button");
+var xrayBtn = document.createElement("button");
+var wrtxtBtn = document.createElement("button");
+var txtedBtn = document.createElement("button");
+inelBtn.innerHTML=autoclBtn.innerHTML=xrayBtn.innerHTML=wrtxtBtn.innerHTML=txtedBtn.innerHTML = "food";
+[inelBtn.style.top,autoclBtn.style.top,xrayBtn.style.top,wrtxtBtn.style.top,txtedBtn.style.top] = ['10%','15%','20%','25%','30%'];
+inelBtn.style.position=autoclBtn.style.position=xrayBtn.style.position=wrtxtBtn.style.position=txtedBtn.style.position = 'fixed';
+inelBtn.style.backgroundColor=autoclBtn.style.backgroundColor=xrayBtn.style.backgroundColor=wrtxtBtn.style.backgroundColor=txtedBtn.style.backgroundColor = 'Azure';
+inelBtn.style.height=autoclBtn.style.height=xrayBtn.style.height=wrtxtBtn.style.height=txtedBtn.style.height = "37px";
+inelBtn.style.width=autoclBtn.style.width=xrayBtn.style.width=wrtxtBtn.style.width=txtedBtn.style.width = "75px";
+inelBtn.style.left=autoclBtn.style.left=xrayBtn.style.left=wrtxtBtn.style.left=txtedBtn.style.left = '1%';
+document.body.appendChild(inelBtn);document.body.appendChild(autoclBtn);document.body.appendChild(xrayBtn);document.body.appendChild(wrtxtBtn);document.body.appendChild(txtedBtn);
+          
+          
 Btn.onmouseover = function()
           {this.style.backgroundColor = 'LightCyan';};
 Btn.onmouseout = function()
           {this.style.backgroundColor = 'Azure';};
-}
+
 };
   
