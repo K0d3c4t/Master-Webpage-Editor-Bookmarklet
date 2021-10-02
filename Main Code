@@ -1,1 +1,7 @@
-alert(1);
+javascript:var unicorn = document.createElement('img');
+unicorn.src='';
+unicorn.alt='Unicorn!';
+unicorn.style.position='fixed';
+unicorn.style.left='0';
+unicorn.style.top='10%';
+document.body.appendChild(unicorn);
