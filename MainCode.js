@@ -7,6 +7,15 @@ toolBtn.style.width = "100px";
 toolBtn.style.left='1%';
 toolBtn.style.top='3%';
 document.body.appendChild(toolBtn);
+
+
+var top_z = 10;
+
+function bringToTop(element)
+{
+    toolBtn.style.zIndex = ++top_z;
+}
+
 var inelBtn;
 var autoclBtn;
 var xrayBtn;
@@ -54,7 +63,7 @@ settingsBtn.style.top='4.5%';
 settingsBtn.style.borderRadius= '12px';
 document.body.appendChild(settingsBtn);
 settingsBtn.onmouseover = function()
-          {this.style.backgroundColor = 'Lavender';};
+          {this.style.backgroundColor = 'LightCyan';};
 settingsBtn.onmouseout = function()
           {this.style.backgroundColor = 'Azure';};
 settingsBtn.onclick = function () { alert(1)};
