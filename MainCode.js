@@ -29,7 +29,7 @@ txtedBtn = document.createElement("button");
 [inelBtn.style.top,autoclBtn.style.top,xrayBtn.style.top,wrtxtBtn.style.top,txtedBtn.style.top] = ['10%','16%','22%','28%','34%'];
 inelBtn.style.position=autoclBtn.style.position=xrayBtn.style.position=wrtxtBtn.style.position=txtedBtn.style.position = 'fixed';
 inelBtn.style.backgroundColor=autoclBtn.style.backgroundColor=xrayBtn.style.backgroundColor=wrtxtBtn.style.backgroundColor=txtedBtn.style.backgroundColor = 'Azure';
-inelBtn.style.height=autoclBtn.style.height=xrayBtn.style.height=wrtxtBtn.style.height=txtedBtn.style.height = "38px";
+inelBtn.style.height=autoclBtn.style.height=xrayBtn.style.height=wrtxtBtn.style.height=txtedBtn.style.height = "40px";
 inelBtn.style.width=autoclBtn.style.width=xrayBtn.style.width=wrtxtBtn.style.width=txtedBtn.style.width = "90px";
 inelBtn.style.left=autoclBtn.style.left=xrayBtn.style.left=wrtxtBtn.style.left=txtedBtn.style.left = '1.25%';
 document.body.appendChild(inelBtn);document.body.appendChild(autoclBtn);document.body.appendChild(xrayBtn);document.body.appendChild(wrtxtBtn);document.body.appendChild(txtedBtn);
