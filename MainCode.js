@@ -126,17 +126,17 @@ rightSett = document.createElement("button");
 bottomSett = document.createElement("button");
 helpSett = document.createElement("button");
 [hideSett.innerHTML,rightSett.innerHTML,bottomSett.innerHTML,helpSett.innerHTML] = ["Hide","Right","Bottom","Help"];
-[inelBtn.style.top,autoclBtn.style.top,xrayBtn.style.top,wrtxtBtn.style.top,txtedBtn.style.top] = ['10%','16%','22%','28%','34%'];
-inelBtn.style.position=autoclBtn.style.position=xrayBtn.style.position=wrtxtBtn.style.position=txtedBtn.style.position = 'fixed';
-inelBtn.style.backgroundColor=autoclBtn.style.backgroundColor=xrayBtn.style.backgroundColor=wrtxtBtn.style.backgroundColor=txtedBtn.style.backgroundColor = 'Azure';
-inelBtn.style.height=autoclBtn.style.height=xrayBtn.style.height=wrtxtBtn.style.height=txtedBtn.style.height = "40px";
-inelBtn.style.width=autoclBtn.style.width=xrayBtn.style.width=wrtxtBtn.style.width=txtedBtn.style.width = "90px";
-inelBtn.style.left=autoclBtn.style.left=xrayBtn.style.left=wrtxtBtn.style.left=txtedBtn.style.left = '1.25%';
-inelBtn.style.zIndex=autoclBtn.style.zIndex=xrayBtn.style.zIndex=wrtxtBtn.style.zIndex=txtedBtn.style.zIndex = "9999";
-document.body.appendChild(inelBtn);document.body.appendChild(autoclBtn);document.body.appendChild(xrayBtn);document.body.appendChild(wrtxtBtn);document.body.appendChild(txtedBtn);
-inelBtn.style.visiblility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'visible';
-inelBtn.onmouseover=autoclBtn.onmouseover=xrayBtn.onmouseover=wrtxtBtn.onmouseover=txtedBtn.onmouseover = function()
+[hideSett.style.left,rightSett.style.left,bottomSett.style.left,helpSett.style.left] = ['10%','16%','22%','28%','34%'];
+hideSett.style.position=rightSett.style.position=bottomSett.style.position=helpSett.style.position = 'fixed';
+hideSett.style.backgroundColor=rightSett.style.backgroundColor=bottomSett.style.backgroundColor=helpSett.style.backgroundColor = 'Azure';
+hideSett.style.height=rightSett.style.height=bottomSett.style.height=helpSett.style.height = "40px";
+hideSett.style.width=rightSett.style.width=bottomSett.style.width=helpSett.style.width = "90px";
+hideSett.style.top=rightSett.style.top=bottomSett.style.top=helpSett.style.top = '4.5%';
+hideSett.style.zIndex=rightSett.style.zIndex=bottomSett.style.zIndex=helpSett.style.zIndex = "9999";
+document.body.appendChild(hideSett);document.body.appendChild(rightSett);document.body.appendChild(bottomSett);document.body.appendChild(helpSett);
+hideSett.style.visiblility=rightSett.style.visibility=xrayBtn.style.visibility=helpSett.style.visibility=txtedBtn.style.visibility = 'visible';
+hideSett.onmouseover=rightSett.onmouseover=bottomSett.onmouseover=helpSett.onmouseover = function()
 {this.style.backgroundColor = 'LightCyan';};
-inelBtn.onmouseout=autoclBtn.onmouseout=xrayBtn.onmouseout=wrtxtBtn.onmouseout=txtedBtn.onmouseout = function()
+hideSett.onmouseout=rightSett.onmouseout=bottomSett.onmouseout=helpSett.onmouseout = function()
 {this.style.backgroundColor = 'Azure';}
 };
