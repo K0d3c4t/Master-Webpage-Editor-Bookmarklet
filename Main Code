@@ -2,9 +2,16 @@ var theButton = document.createElement("button");
 theButton.innerHTML = "Click Me";
 theButton.alt='theButton';
 theButton.style.position='fixed';
-theButton.style.left='5%';
+theButton.style.backgroundColor='Azure';
+theButton.style.height = "50px";
+theButton.style.width = "75px";
+theButton.style.left='1%';
 theButton.style.top='10%';
 document.body.appendChild(theButton);
+theButton.onmouseover = function()
+          {this.style.backgroundColor = 'LightCyan';};
+ theButton.onmouseout = function()
+          {this.style.backgroundColor = 'Azure';};
 theButton.onclick = function () {
-  alert("Button is clicked");
+  alert(1);
 };
