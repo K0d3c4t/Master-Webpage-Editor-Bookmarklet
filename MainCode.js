@@ -139,7 +139,12 @@ document.body.appendChild(hideSett);document.body.appendChild(rightSett);documen
 hideSett.onmouseover = rightSett.onmouseover = bottomSett.onmouseover = helpSett.onmouseover = function()
 {this.style.backgroundColor = 'Gainsboro';};
 hideSett.onmouseout=rightSett.onmouseout=bottomSett.onmouseout=helpSett.onmouseout = function()
-{this.style.backgroundColor = 'WhiteSmoke';}
+{this.style.backgroundColor = 'WhiteSmoke';
+hideSett.onclick = function () {
+toolBtn.style.visibility=settingsBtn.style.visibility = 'hidden';
+inelBtn.style.visibility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
+hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';}
+}
 }
 else{
 hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';
