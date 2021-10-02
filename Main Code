@@ -1,7 +1,10 @@
-javascript:var unicorn = document.createElement('img');
-unicorn.src='';
-unicorn.alt='Unicorn!';
-unicorn.style.position='fixed';
-unicorn.style.left='0';
-unicorn.style.top='10%';
-document.body.appendChild(unicorn);
+var theButton = document.createElement("button");
+theButton.innerHTML = "Click Me";
+theButton.alt='theButton';
+theButton.style.position='fixed';
+theButton.style.left='5%';
+theButton.style.top='10%';
+document.body.appendChild(theButton);
+theButton.onclick = function () {
+  alert("Button is clicked");
+};
