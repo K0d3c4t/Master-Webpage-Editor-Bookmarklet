@@ -1,4 +1,3 @@
-var theButton = document.createElement("button");
 var toolBtn = document.createElement("button");
 toolBtn.innerHTML = "Tools";
 toolBtn.style.position='fixed';
