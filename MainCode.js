@@ -112,4 +112,31 @@ settingsBtn.onmouseover = function()
           {this.style.backgroundColor = 'LightCyan';};
 settingsBtn.onmouseout = function()
           {this.style.backgroundColor = 'Azure';};
-settingsBtn.onclick = function () { alert(1)};
+var settshowClick = false;
+var hideSett;
+var rightSett;
+var bottomSett;
+var helpSett;
+settingsBtn.onclick = function () {
+    
+if (settshowClick==false){
+settshowClick = true;
+hideSett = document.createElement("button");
+rightSett = document.createElement("button");
+bottomSett = document.createElement("button");
+helpSett = document.createElement("button");
+[hideSett.innerHTML,rightSett.innerHTML,bottomSett.innerHTML,helpSett.innerHTML] = ["Hide","Right","Bottom","Help"];
+[inelBtn.style.top,autoclBtn.style.top,xrayBtn.style.top,wrtxtBtn.style.top,txtedBtn.style.top] = ['10%','16%','22%','28%','34%'];
+inelBtn.style.position=autoclBtn.style.position=xrayBtn.style.position=wrtxtBtn.style.position=txtedBtn.style.position = 'fixed';
+inelBtn.style.backgroundColor=autoclBtn.style.backgroundColor=xrayBtn.style.backgroundColor=wrtxtBtn.style.backgroundColor=txtedBtn.style.backgroundColor = 'Azure';
+inelBtn.style.height=autoclBtn.style.height=xrayBtn.style.height=wrtxtBtn.style.height=txtedBtn.style.height = "40px";
+inelBtn.style.width=autoclBtn.style.width=xrayBtn.style.width=wrtxtBtn.style.width=txtedBtn.style.width = "90px";
+inelBtn.style.left=autoclBtn.style.left=xrayBtn.style.left=wrtxtBtn.style.left=txtedBtn.style.left = '1.25%';
+inelBtn.style.zIndex=autoclBtn.style.zIndex=xrayBtn.style.zIndex=wrtxtBtn.style.zIndex=txtedBtn.style.zIndex = "9999";
+document.body.appendChild(inelBtn);document.body.appendChild(autoclBtn);document.body.appendChild(xrayBtn);document.body.appendChild(wrtxtBtn);document.body.appendChild(txtedBtn);
+inelBtn.style.visiblility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'visible';
+inelBtn.onmouseover=autoclBtn.onmouseover=xrayBtn.onmouseover=wrtxtBtn.onmouseover=txtedBtn.onmouseover = function()
+{this.style.backgroundColor = 'LightCyan';};
+inelBtn.onmouseout=autoclBtn.onmouseout=xrayBtn.onmouseout=wrtxtBtn.onmouseout=txtedBtn.onmouseout = function()
+{this.style.backgroundColor = 'Azure';}
+};
