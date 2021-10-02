@@ -41,4 +41,20 @@ inelBtn.onmouseout=autoclBtn.onmouseout=xrayBtn.onmouseout=wrtxtBtn.onmouseout=t
 } 
 else{
 inelBtn.style.visibility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
-showClick = false;}}
+showClick = false;}};
+
+var settingsBtn = document.createElement("button");
+settingsBtn.innerHTML = "⚙️";
+settingsBtn.style.position='fixed';
+settingsBtn.style.backgroundColor='Azure';
+settingsBtn.style.height = "35px";
+settingsBtn.style.width = "35px";
+settingsBtn.style.left='8%';
+settingsBtn.style.top='4.5%';
+settingsBtn.style.borderRadius= '12px';
+document.body.appendChild(settingsBtn);
+settingsBtn.onmouseover = function()
+          {this.style.backgroundColor = 'Lavender';};
+settingsBtn.onmouseout = function()
+          {this.style.backgroundColor = 'Azure';};
+settingsBtn.onclick = function () { alert(1)};
