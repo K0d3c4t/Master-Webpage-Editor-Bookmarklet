@@ -6,6 +6,7 @@ toolBtn.style.height = "50px";
 toolBtn.style.width = "100px";
 toolBtn.style.left='1%';
 toolBtn.style.top='3%';
+toolBtn.style.visibility = 'visible';
 toolBtn.style.zIndex = "9999";
 document.body.appendChild(toolBtn);
 
@@ -139,4 +140,8 @@ hideSett.onmouseover = rightSett.onmouseover = bottomSett.onmouseover = helpSett
 {this.style.backgroundColor = 'Gainsboro';};
 hideSett.onmouseout=rightSett.onmouseout=bottomSett.onmouseout=helpSett.onmouseout = function()
 {this.style.backgroundColor = 'WhiteSmoke';}
-}}
+}
+else{
+hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';
+settshowClick = false;}
+}
