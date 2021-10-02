@@ -1,7 +1,7 @@
 var toolBtn = document.createElement("button");
 toolBtn.innerHTML = "Tools";
 toolBtn.style.position='fixed';
-toolBtn.style.backgroundColor='Azure';
+toolBtn.style.backgroundColor='AliceBlue';
 toolBtn.style.height = "50px";
 toolBtn.style.width = "100px";
 toolBtn.style.left='1%';
@@ -25,7 +25,7 @@ var txtedBtn;
 toolBtn.onmouseover = function()
           {this.style.backgroundColor = 'Lavender';};
 toolBtn.onmouseout = function()
-          {this.style.backgroundColor = 'Azure';};
+          {this.style.backgroundColor = 'AliceBlue';};
 var showClick = false;
 toolBtn.onclick = function () {
 if (showClick==false){
@@ -100,18 +100,18 @@ showClick = false;}};
 var settingsBtn = document.createElement("button");
 settingsBtn.innerHTML = "⚙️";
 settingsBtn.style.position='fixed';
-settingsBtn.style.backgroundColor='Azure';
+settingsBtn.style.backgroundColor='WhiteSmoke';
 settingsBtn.style.height = "35px";
 settingsBtn.style.width = "35px";
 settingsBtn.style.left='8%';
-settingsBtn.style.top='4.5%';
+settingsBtn.style.top='4.35%';
 settingsBtn.style.zIndex = "9999";
 settingsBtn.style.borderRadius= '12px';
 document.body.appendChild(settingsBtn);
 settingsBtn.onmouseover = function()
-          {this.style.backgroundColor = 'LightCyan';};
+          {this.style.backgroundColor = 'Gainsboro';};
 settingsBtn.onmouseout = function()
-          {this.style.backgroundColor = 'Azure';};
+          {this.style.backgroundColor = 'WhiteSmoke';};
 var settshowClick = false;
 var hideSett;
 var rightSett;
@@ -126,17 +126,17 @@ rightSett = document.createElement("button");
 bottomSett = document.createElement("button");
 helpSett = document.createElement("button");
 [hideSett.innerHTML,rightSett.innerHTML,bottomSett.innerHTML,helpSett.innerHTML] = ["Hide","Right","Bottom","Help"];
-[hideSett.style.left,rightSett.style.left,bottomSett.style.left,helpSett.style.left] = ['10%','16%','22%','28%','34%'];
+[hideSett.style.left,rightSett.style.left,bottomSett.style.left,helpSett.style.left] = ['11%','17%','23%','29%'];
 hideSett.style.position=rightSett.style.position=bottomSett.style.position=helpSett.style.position = 'fixed';
-hideSett.style.backgroundColor=rightSett.style.backgroundColor=bottomSett.style.backgroundColor=helpSett.style.backgroundColor = 'Azure';
-hideSett.style.height=rightSett.style.height=bottomSett.style.height=helpSett.style.height = "40px";
-hideSett.style.width=rightSett.style.width=bottomSett.style.width=helpSett.style.width = "90px";
+hideSett.style.backgroundColor=rightSett.style.backgroundColor=bottomSett.style.backgroundColor=helpSett.style.backgroundColor = 'WhiteSmoke';
+hideSett.style.height=rightSett.style.height=bottomSett.style.height=helpSett.style.height = "30px";
+hideSett.style.width=rightSett.style.width=bottomSett.style.width=helpSett.style.width = "65px";
 hideSett.style.top=rightSett.style.top=bottomSett.style.top=helpSett.style.top = '4.5%';
 hideSett.style.zIndex=rightSett.style.zIndex=bottomSett.style.zIndex=helpSett.style.zIndex = "9999";
+hideSett.style.visiblility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'visible';
 document.body.appendChild(hideSett);document.body.appendChild(rightSett);document.body.appendChild(bottomSett);document.body.appendChild(helpSett);
-hideSett.style.visiblility=rightSett.style.visibility=xrayBtn.style.visibility=helpSett.style.visibility=txtedBtn.style.visibility = 'visible';
-hideSett.onmouseover=rightSett.onmouseover=bottomSett.onmouseover=helpSett.onmouseover = function()
-{this.style.backgroundColor = 'LightCyan';};
+hideSett.onmouseover = rightSett.onmouseover = bottomSett.onmouseover = helpSett.onmouseover = function()
+{this.style.backgroundColor = 'Gainsboro';};
 hideSett.onmouseout=rightSett.onmouseout=bottomSett.onmouseout=helpSett.onmouseout = function()
-{this.style.backgroundColor = 'Azure';}
-};
+{this.style.backgroundColor = 'WhiteSmoke';}
+}}
