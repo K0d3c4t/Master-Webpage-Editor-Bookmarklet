@@ -52,7 +52,7 @@ inelBtn.onmouseout=autoclBtn.onmouseout=xrayBtn.onmouseout=wrtxtBtn.onmouseout=t
 script.src="//cdn.jsdelivr.net/npm/eruda"; 
 document.body.appendChild(script); 
 script.onload = function () { eruda.init() } })();
- }
+ };
  autoclBtn.onclick = function () {
 var DELAY = 1;var autoClickerStyleElement = document.createElement("style");
 autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";
@@ -64,14 +64,14 @@ document.body.removeEventListener("click", addClicker);e.preventDefault();autoCl
 {if(element.classList.contains("auto-clicker-target")) {element.click();
 setTimeout(function(){ autoClick(element); }, DELAY);}}
 document.body.addEventListener("click", addClicker, 0);
- }
+ };
  xrayBtn.onclick = function () {
 (function () {var script=document.createElement('script');
 script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';
 script.setAttribute('data-lang','en-US');
 script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');
 document.body.appendChild(script);}())
- }
+ };
  wrtxtBtn.onclick = function () {
 (function(){(function(){var enteredText = prompt("Please Enter Text");
 var TEXT = enteredText;
@@ -80,7 +80,7 @@ Array.prototype.slice.call(document.querySelectorAll('input[type=text],textarea'
 if (charCode && charCode > 31) {var start = this.selectionStart, end = this.selectionEnd;
 this.value = this.value.slice(0, start) + TEXT[start % TEXT.length] + this.value.slice(end);
 this.selectionStart = this.selectionEnd = start + 1;}return false;}});}());}())
- }
+ };
 var txtedClicked = false;
 txtedBtn.onclick = function () {
 if (txtedClicked == false){
@@ -89,8 +89,8 @@ document.body.contentEditable = 'true'; document.designMode='on'; void 0}
 if (txtedClicked == true){
 txtedClicked = false;
 document.body.contentEditable = 'false'; document.designMode='off'; void 0}
- }
-}}}
+ };
+}}
 else{
 inelBtn.style.visibility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
 showClick = false;}};
