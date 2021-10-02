@@ -86,7 +86,7 @@ txtedBtn.onclick = function () {
 if (txtedClicked == false){
 txtedClicked = true;
 document.body.contentEditable = 'true'; document.designMode='on'; void 0}
-if (txtedClicked == true){
+else if (txtedClicked == true){
 txtedClicked = false;
 document.body.contentEditable = 'false'; document.designMode='off'; void 0}
  };
