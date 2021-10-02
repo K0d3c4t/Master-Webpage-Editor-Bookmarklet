@@ -6,6 +6,7 @@ toolBtn.style.height = "50px";
 toolBtn.style.width = "100px";
 toolBtn.style.left='1%';
 toolBtn.style.top='3%';
+toolBtn.style.zIndex = "9999";
 document.body.appendChild(toolBtn);
 
 
@@ -41,6 +42,7 @@ inelBtn.style.backgroundColor=autoclBtn.style.backgroundColor=xrayBtn.style.back
 inelBtn.style.height=autoclBtn.style.height=xrayBtn.style.height=wrtxtBtn.style.height=txtedBtn.style.height = "40px";
 inelBtn.style.width=autoclBtn.style.width=xrayBtn.style.width=wrtxtBtn.style.width=txtedBtn.style.width = "90px";
 inelBtn.style.left=autoclBtn.style.left=xrayBtn.style.left=wrtxtBtn.style.left=txtedBtn.style.left = '1.25%';
+inelBtn.style.zIndex=autoclBtn.style.zIndex=xrayBtn.style.zIndex=wrtxtBtn.style.zIndex=txtedBtn.style.zIndex = "9999";
 document.body.appendChild(inelBtn);document.body.appendChild(autoclBtn);document.body.appendChild(xrayBtn);document.body.appendChild(wrtxtBtn);document.body.appendChild(txtedBtn);
 inelBtn.style.visiblility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'visible';
 inelBtn.onmouseover=autoclBtn.onmouseover=xrayBtn.onmouseover=wrtxtBtn.onmouseover=txtedBtn.onmouseover = function()
@@ -103,6 +105,7 @@ settingsBtn.style.height = "35px";
 settingsBtn.style.width = "35px";
 settingsBtn.style.left='8%';
 settingsBtn.style.top='4.5%';
+settingsBtn.style.zIndex = "9999";
 settingsBtn.style.borderRadius= '12px';
 document.body.appendChild(settingsBtn);
 settingsBtn.onmouseover = function()
