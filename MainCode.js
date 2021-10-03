@@ -17,7 +17,7 @@ var txtedBtn;
 var watermark=document.createElement("button");watermark.innerHTML="Made By K0d3c4t";watermark.style.backgroundColor='Transparent';
 watermark.style.height="30px";watermark.style.width ="140px";watermark.style.right='2%';watermark.style.top='0.5%';
 watermark.style.border='0px';watermark.style.position='fixed';watermark.style.zIndex ="9999";document.body.appendChild(watermark);
-function hideWater(){watermark.style.visibility = 'hidden';};
+function hideWater(){watermark.style.visibility = 'hidden';}
 toolBtn.onmouseover = function()
           {this.style.backgroundColor = 'Lavender';};
 toolBtn.onmouseout = function()
@@ -50,8 +50,7 @@ inelBtn.onmouseout=autoclBtn.onmouseout=xrayBtn.onmouseout=wrtxtBtn.onmouseout=t
 (function () { var script = document.createElement('script'); 
 script.src="//cdn.jsdelivr.net/npm/eruda"; 
 document.body.appendChild(script); 
-script.onload = function () { eruda.init() } })();
- };
+script.onload = function () { eruda.init() } })();};
  autoclBtn.onclick = function () {
 var DELAY = 1;var autoClickerStyleElement = document.createElement("style");
 autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";
@@ -62,15 +61,13 @@ else {e.target.classList.add("auto-clicker-target");}document.body.removeChild(a
 document.body.removeEventListener("click", addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) 
 {if(element.classList.contains("auto-clicker-target")) {element.click();
 setTimeout(function(){ autoClick(element); }, DELAY);}}
-document.body.addEventListener("click", addClicker, 0);
- };
+document.body.addEventListener("click", addClicker, 0);};
  xrayBtn.onclick = function () {
 (function () {var script=document.createElement('script');
 script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';
 script.setAttribute('data-lang','en-US');
 script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');
-document.body.appendChild(script);}())
- };
+document.body.appendChild(script);}())};
  wrtxtBtn.onclick = function () {
 (function(){(function(){var enteredText = prompt("Please Enter Text");
 var TEXT = enteredText;
@@ -78,8 +75,7 @@ Array.prototype.slice.call(document.querySelectorAll('input[type=text],textarea'
 {el.onkeypress=function(evt){var charCode = typeof evt.which == 'number' ? evt.which : evt.keyCode;
 if (charCode && charCode > 31) {var start = this.selectionStart, end = this.selectionEnd;
 this.value = this.value.slice(0, start) + TEXT[start % TEXT.length] + this.value.slice(end);
-this.selectionStart = this.selectionEnd = start + 1;}return false;}});}());}())
- };
+this.selectionStart = this.selectionEnd = start + 1;}return false;}});}());}())};
 var txtedClicked = false;
 txtedBtn.onclick = function () {
 if (txtedClicked == false){
@@ -87,13 +83,11 @@ txtedClicked = true;
 document.body.contentEditable = 'true'; document.designMode='on'; void 0}
 else if (txtedClicked == true){
 txtedClicked = false;
-document.body.contentEditable = 'false'; document.designMode='off'; void 0}
- };
+document.body.contentEditable = 'false'; document.designMode='off'; void 0}};
 }}
 else{
 inelBtn.style.visibility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
 showClick = false;}};
-
 var settingsBtn = document.createElement("button");
 settingsBtn.innerHTML = "⚙️";
 settingsBtn.style.position='fixed';
@@ -139,8 +133,10 @@ hideSett.onmouseout=rightSett.onmouseout=bottomSett.onmouseout=helpSett.onmouseo
 hideSett.onclick = function () {
 toolBtn.style.visibility=settingsBtn.style.visibility=watermark.style.visibility = 'hidden';
 inelBtn.style.visibility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
-hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';}
-}
+hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';};
+helpSett.onclick = function () {
+window.open("https://github.com/K0d3c4t/Master-Code-Project/blob/main/README.md","_blank","top=100,left=100,width=800,height=500,menubar=yes,toolbar=yes,scrollbars=yes,resizable=yes");
+};}
 }
 else{
 hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';
