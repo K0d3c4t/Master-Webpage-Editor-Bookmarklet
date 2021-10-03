@@ -17,5 +17,8 @@ The auto clicker script allows you to be able to auto click on any webpage witho
 ### Webpage X-Ray
 Webpage X-Ray allows you to change different elements on a webpage by clicking on it and editing the javascript with extreme ease. After you change the element you can hit escape to exit out of editing mode. The script was not made by me and is [here](https://x-ray-goggles.mouse.org/).
 
+### Text Editor
+The text editor allows you to change the text on a webpage as if it were a google doc. Click once to enable it and again to disable it.
+
 ## Settings
 
