@@ -14,8 +14,8 @@ var autoclBtn;
 var xrayBtn;
 var wrtxtBtn;
 var txtedBtn;
-var watermark=document.createElement("button");watermark.innerHTML="K0d3c4t";watermark.style.backgroundColor='Transparent';
-watermark.style.height="20px";watermark.style.width ="30px";watermark.style.left='2%';watermark.style.top='0.5%';
+var watermark=document.createElement("button");watermark.innerHTML="Made By K0d3c4t";watermark.style.backgroundColor='Transparent';
+watermark.style.height="30px";watermark.style.width ="90px";watermark.style.right='3%';watermark.style.top='1%';
 watermark.style.border='0px';watermark.style.position='fixed';watermark.style.zIndex ="9999";document.body.appendChild(watermark);
 toolBtn.onmouseover = function()
           {this.style.backgroundColor = 'Lavender';};
