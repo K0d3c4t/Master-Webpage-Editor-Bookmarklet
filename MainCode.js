@@ -9,20 +9,14 @@ toolBtn.style.top='3%';
 toolBtn.style.visibility = 'visible';
 toolBtn.style.zIndex = "9999";
 document.body.appendChild(toolBtn);
-
-
-var top_z = 10;
-
-function bringToTop(element)
-{
-    toolBtn.style.zIndex = ++top_z;
-}
-
 var inelBtn;
 var autoclBtn;
 var xrayBtn;
 var wrtxtBtn;
 var txtedBtn;
+var watermark=document.createElement("button");watermark.innerHTML="K0d3c4t";watermark.style.backgroundColor='Transparent';
+watermark.style.height="20px";watermark.style.width ="30px";watermark.style.left='2%';watermark.style.top='0.5%';
+watermark.style.border='0px';watermark.style.position='fixed';watermark.style.zIndex ="9999";document.body.appendChild(watermark);
 toolBtn.onmouseover = function()
           {this.style.backgroundColor = 'Lavender';};
 toolBtn.onmouseout = function()
@@ -141,7 +135,7 @@ hideSett.onmouseover = rightSett.onmouseover = bottomSett.onmouseover = helpSett
 hideSett.onmouseout=rightSett.onmouseout=bottomSett.onmouseout=helpSett.onmouseout = function()
 {this.style.backgroundColor = 'WhiteSmoke';
 hideSett.onclick = function () {
-toolBtn.style.visibility=settingsBtn.style.visibility = 'hidden';
+toolBtn.style.visibility=settingsBtn.style.visibility=watermark.style.visibility = 'hidden';
 inelBtn.style.visibility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
 hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';}
 }
