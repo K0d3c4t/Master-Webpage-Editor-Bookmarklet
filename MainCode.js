@@ -25,8 +25,7 @@ toolBtn.onmouseout = function()
 var showClick = false;
 toolBtn.onclick = function () {
 hideWater();
-if (showClick==false){
-showClick = true;
+if (showClick==false){showClick = true;
 inelBtn = document.createElement("button");
 autoclBtn= document.createElement("button");
 xrayBtn= document.createElement("button");
@@ -110,8 +109,7 @@ var bottomSett;
 var helpSett;
 settingsBtn.onclick = function () {
 hideWater();
-if (settshowClick==false){
-settshowClick = true;
+if (settshowClick==false){settshowClick = true;
 hideSett = document.createElement("button");
 rightSett = document.createElement("button");
 bottomSett = document.createElement("button");
