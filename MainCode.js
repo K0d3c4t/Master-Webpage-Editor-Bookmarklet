@@ -15,14 +15,16 @@ var xrayBtn;
 var wrtxtBtn;
 var txtedBtn;
 var watermark=document.createElement("button");watermark.innerHTML="Made By K0d3c4t";watermark.style.backgroundColor='Transparent';
-watermark.style.height="30px";watermark.style.width ="90px";watermark.style.right='3%';watermark.style.top='1%';
+watermark.style.height="30px";watermark.style.width ="140px";watermark.style.right='2%';watermark.style.top='0.5%';
 watermark.style.border='0px';watermark.style.position='fixed';watermark.style.zIndex ="9999";document.body.appendChild(watermark);
+function hideWater(){watermark.style.visibility = 'hidden';};
 toolBtn.onmouseover = function()
           {this.style.backgroundColor = 'Lavender';};
 toolBtn.onmouseout = function()
           {this.style.backgroundColor = 'AliceBlue';};
 var showClick = false;
 toolBtn.onclick = function () {
+hideWater();
 if (showClick==false){
 showClick = true;
 inelBtn = document.createElement("button");
@@ -113,7 +115,7 @@ var rightSett;
 var bottomSett;
 var helpSett;
 settingsBtn.onclick = function () {
-    
+hideWater();
 if (settshowClick==false){
 settshowClick = true;
 hideSett = document.createElement("button");
