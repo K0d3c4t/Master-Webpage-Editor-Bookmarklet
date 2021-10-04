@@ -133,7 +133,7 @@ toolBtn.style.visibility=settingsBtn.style.visibility=watermark.style.visibility
 inelBtn.style.visibility=autoclBtn.style.visibility=xrayBtn.style.visibility=wrtxtBtn.style.visibility=txtedBtn.style.visibility = 'hidden';
 hideSett.style.visibility=rightSett.style.visibility=bottomSett.style.visibility=helpSett.style.visibility = 'hidden';};
 helpSett.onclick = function () {
-window.open("https://github.com/K0d3c4t/Master-Code-Project/blob/main/README.md","_blank","top=100,left=100,width=800,height=500,menubar=yes,toolbar=yes,scrollbars=yes,resizable=yes");
+window.open("https://github.com/K0d3c4t/Master-Webpage-Editor-Bookmarklet/blob/main/README.md","_blank","top=100,left=100,width=800,height=500,menubar=yes,toolbar=yes,scrollbars=yes,resizable=yes");
 };}
 }
 else{
