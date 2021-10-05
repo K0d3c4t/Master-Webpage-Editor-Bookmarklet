@@ -1,5 +1,5 @@
-# Master Webpage Editor Bookmarklet
-With the Master Code Project you can have quick and easy access to many different javascript scripts for the internet. There is still more that will be added when time is avalible.
+# Master Webpage Editor
+With the Master Webpage Editor you can have quick and easy access to many different javascript scripts for the internet. There is still more that will be added when time is avalible.
 ## Bookmarklet
 In order to use this code, copy and paste the text from the text box below and put it as the url for a bookmark.
 ```javascript
